@@ -1,4 +1,4 @@
-package t50_ex;
+package t08_inheritance;
 
 public class T04Run {
 	public static void main(String[] args) {

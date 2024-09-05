@@ -1,4 +1,4 @@
-package t50_ex;
+package t08_inheritance;
 
 public class T03_P {
 	public T03_P() {

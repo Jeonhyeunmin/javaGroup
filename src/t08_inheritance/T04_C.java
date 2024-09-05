@@ -1,4 +1,4 @@
-package t50_ex;
+package t08_inheritance;
 
 public class T04_C extends T04_P {
 	public T04_C(int su) {
