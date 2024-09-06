@@ -23,6 +23,6 @@ public class ToyRun2 {
 			toy[i].missile();
 			System.out.println();
 		}
-		*/
+*/
 	}
 }
