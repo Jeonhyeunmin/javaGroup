@@ -30,5 +30,4 @@ public class SeoulBunsik extends Bonsa{
 	public void konggi() {
 		System.out.println("공기밥 : " + getKonggi());								
 	}
-
 }
