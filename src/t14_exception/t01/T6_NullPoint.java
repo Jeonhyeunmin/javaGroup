@@ -1,4 +1,4 @@
-package t14_texception.t01;
+package t14_exception.t01;
 
 public class T6_NullPoint {
 	public static void main(String[] args) {

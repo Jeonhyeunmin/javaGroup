@@ -15,7 +15,6 @@ public class Bear implements Toy {
 	public void moving() {
 		System.out.println("팔 / 다리가 모두 움직일 수 있습니다.");
 	}
-
 	@Override
 	public void fire() {}
 
@@ -23,11 +22,7 @@ public class Bear implements Toy {
 	public void missile() {}
 
 	@Override
-	public int possibleAge(int age) {
-		int i = 0;
-		if(age > 8) {
-			i = 0;
-		}
-		return i;
+	public int possibleAge() {
+		return age;
 		}
 	}

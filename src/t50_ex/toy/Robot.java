@@ -22,7 +22,7 @@ public class Robot implements Toy {
 	public void missile() {}
 
 	@Override
-	public int possibleAge(int age) {
+	public int possibleAge() {
 		return age;
 	}
 

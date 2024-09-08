@@ -1,4 +1,4 @@
-package t14_texception.t01;
+package t14_exception.t01;
 
 public class T4_Aritgmetic {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package t14_texception.t01;
+package t14_exception.t01;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

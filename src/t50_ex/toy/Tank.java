@@ -22,7 +22,7 @@ public class Tank implements Toy {
 	}
 
 	@Override
-	public int possibleAge(int age) {
+	public int possibleAge() {
 		return age;
 	}
 
