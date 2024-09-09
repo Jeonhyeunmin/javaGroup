@@ -1,4 +1,4 @@
-package t50_ex;
+package t50_ex.member;
 
 public class MemberService {
 	

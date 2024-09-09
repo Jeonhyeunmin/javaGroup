@@ -1,4 +1,4 @@
-package t50_ex;
+package t50_ex.bank;
 
 import java.util.Scanner;
 
@@ -112,8 +112,6 @@ public class BankApplication {
 		System.out.print("계좌번호: ");
 		String ano = scanner.next();
 
-		Ex20_Account account = findAccount(ano);
-		account = null;
 		for (int i = 0; i < accountArray.length; i++) {
 			if (findAccount(ano).equals(accountArray[i])) {
 				accountArray[i] = accountArray[i + 1];

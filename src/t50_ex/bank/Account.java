@@ -1,4 +1,4 @@
-package t50_ex;
+package t50_ex.bank;
 
 public class Account {
 	static final int MIN_BALANCE = 0;

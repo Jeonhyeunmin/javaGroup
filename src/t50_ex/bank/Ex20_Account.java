@@ -1,4 +1,4 @@
-package t50_ex;
+package t50_ex.bank;
 
 public class Ex20_Account {
 	private String ano;
