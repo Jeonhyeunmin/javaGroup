@@ -6,15 +6,22 @@ package t50_ex;
 		찾고자하는 알파벳 : o
 		o를 포함하고 있는 갯수 : 3
 		o가 위치한 곳 : 4 / 9 / 12
-
 */
 public class T5_indexOf {
 	public static void main(String[] args) {
-		String msg1 = "Welcome to Korea!";
+		String index = "";
+		int cnt = 0;
+		String msg = "Welcome to Korea!";
+		char msgArr[] = new char[msg.length()];
+		msg.getChars(0, msg.length(), msgArr, 0);
 		
-		System.out.println(msg1.indexOf("o"));
-		System.out.println(msg1.indexOf("o", msg1.indexOf("o")+1));
-		System.out.println(msg1.indexOf("o", msg1.indexOf("o")+msg1.indexOf("o")+2));
-		
+		for(int i = 0 ; i < msgArr.length; i++) {
+			if(msgArr[i] == 'o') {
+				index += i + " / ";
+				cnt++;
+			}
+		}
+		System.out.println("'o'을 포함하고 있는 갯수 : " + cnt + "개");
+		System.out.println("'o'가 위치한 곳 : " + index.substring(0,index.length()-2));
 	}
 }
