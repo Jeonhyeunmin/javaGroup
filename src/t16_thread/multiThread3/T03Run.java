@@ -2,6 +2,22 @@ package t16_thread.multiThread3;
 
 public class T03Run {
 	public static void main(String[] args) {
+		Thread screenTh1 = new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+//			#1. 영상프레임 1~5컷
+				int screenArray[] = {1, 2, 3, 4, 5};
+				
+//			#3. 영상출력
+				for(int i = 0; i < screenArray.length; i++) {
+					System.out.print("영상프레임 : " + screenArray[i]);
+					
+					try {Thread.sleep(500);} catch (InterruptedException e) {}
+				}
+			}
+		});
+		
 		//	자막을 출력하는 스레드를 '익명이너클래스'로 구현한다
 		Thread smiTh1 = new Thread(new Runnable() {
 			
@@ -18,21 +34,6 @@ public class T03Run {
 			}
 		});
 		
-		Thread screenTh1 = new Thread(new Runnable() {
-			
-			@Override
-			public void run() {
-//			#1. 영상프레임 1~5컷
-				int screenArray[] = {1, 2, 3, 4, 5};
-			
-//			#3. 영상출력
-				for(int i = 0; i < screenArray.length; i++) {
-					System.out.print("영상프레임 : " + screenArray[i]);
-				
-					try {Thread.sleep(500);} catch (InterruptedException e) {}
-				}
-			}
-		});
 		
 		
 		screenTh1.start();
