@@ -26,7 +26,7 @@ public class T02_Queue2 {
 		
 //		바로 아래 자료 보기
 //		System.out.println(queue.element());
-		System.out.println(queue.peek());			//	예외처리에서 오류 발생 가능성이 있음.
+		System.out.println(queue.peek());			
 		System.out.println();
 		
 		

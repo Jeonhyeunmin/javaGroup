@@ -25,8 +25,8 @@ public class T02_Queue {
 		System.out.println();
 		
 //		바로 아래 자료 보기
-//		System.out.println(queue.element());
-		System.out.println(queue.peek());			//	예외처리에서 오류 발생 가능성이 있음.
+//		System.out.println(queue.element());	//	예외처리했을 때의 사용
+		System.out.println(queue.peek());			
 		System.out.println();
 		
 		
@@ -38,6 +38,8 @@ public class T02_Queue {
 		System.out.println("3. 크기 : " + queue.size());
 		System.out.println("3. 내용 : " + queue);
 		System.out.println();
+//		System.out.println(queue.element());
+		System.out.println(queue.peek());
 //		queue.remove();
 	}
 }
