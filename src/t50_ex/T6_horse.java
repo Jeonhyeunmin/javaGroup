@@ -28,8 +28,7 @@ public class T6_horse {
 		String choice = sc.next();
 		System.out.println("배팅하실 금액을 선택해주세요");
 		int money = sc.nextInt();
-		System.out.println(
-				"============================================================== 시작 ==============================================================");
+		System.out.println("============================================================== 시작 ==============================================================");
 
 		Thread horse1 = new Thread(new Runnable() {
 			@Override
