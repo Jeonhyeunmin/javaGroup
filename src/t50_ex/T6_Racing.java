@@ -7,12 +7,12 @@ public class T6_Racing {
 		Scanner sc = new Scanner(System.in);
 		String horseName = "";
 		int bat = 0;
+		int choice = 0;
 		
 		System.out.println("* 당첨금은 배팅한 금액의 : 1등은 200%, 2등은 150%, 3등은 120%, 4등과 5등은 없습니다.");
 		System.out.print("배팅 금액을 입력하세요? ");
 		bat = sc.nextInt();
 		
-		int choice = 0;
 		while(true) {
 			System.out.println("==> 경주마를 선택하세요? ");
 			System.out.print("1번말:태양, 2번말:바람, 3번말:번개, 4번말:태권, 5번말:태풍 ==> ");
@@ -76,11 +76,13 @@ class Horse extends Thread {
 	public void run() {
 		String currentHorse = Thread.currentThread().getName();
 		
+		String sb = "";
 		while(true) {
-			StringBuffer sb = new StringBuffer();
 			sum += (int)(Math.random()*5) + 1;
 			
-			for(int i=0; i<sum; i++) sb.append(">");
+			for(int i=0; i<sum; i++) {
+				sb += ">";
+			}
 			//System.out.println("sum : " + sum);
 			if(sum < targetNum) {
 				System.out.println(currentHorse + "완주율:" + sum + "% : " + sb);
@@ -96,6 +98,9 @@ class Horse extends Thread {
 			try { Thread.sleep(300); } catch (InterruptedException e) {}
 		}
 	}
+
+
+
 
 	// 전체 순위와 배팅금액 계산하기
 	public void total() {
