@@ -1,6 +1,5 @@
 show tables;
 
-
 --	테이블 생성하기
 create table test(		
 	idx		int not null auto_increment primary key,	/* 고유번호 */
