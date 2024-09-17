@@ -5,7 +5,7 @@ CREATE TABLE hoewon (
 	name 			varchar(30) not null,																					/*	이름	*/
 	age 			int 				default 20,																				/*	나이	*/
 	gender 		char(2)			default '여자',																		/*	성별	*/
-	joinday		datetime		default now(),																			/*	생년월일 (yyyy-MM-dd)	*/
+	joinday		datetime		default now(),																		/*	생년월일 (yyyy-MM-dd)	*/
 	address		varchar(20)																										/*	주소	*/
 );
 
