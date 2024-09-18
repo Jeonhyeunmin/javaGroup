@@ -56,16 +56,17 @@ select * from sinsang;
 
 update sinsang set point = point + 100 where gender = '여자';
 
-
 select * from sinsang;
 
-update sinsang set point = point + 50
+update sinsang set point = point + 50 where gender = '남자' and age>=35;
 where gender = '남자' and age >= 35;
 
 select * from sinsang;
 
 update sinsang set address = '서울'
 where mid = 'kim1';
+
+update sinsang set address='서울' where mid = 'kim1';
 
 select mid, age, address from sinsang;
 
@@ -78,6 +79,16 @@ insert into sinsang values ('park','1234','박세리',35,'여자',default,'인�
 select mid, gender, address from sinsang
 where age between 30 and 39
 and gender = '여자';
+
+update sinsang set point = point + 500 where gender = '여자' and address !='서울' and address != '인천' ;
+
+update sinsang set point = 0 where gender = '남자' and ipsail<'1990-01-01' ;
+
+update sinsang set gender = '여자' where point = 0 and age >= 40 ;
+
+update sinsang set pwd = '0000' and point = point + 300 where address = '서울';
+
+delete from sinsang where point=0 and gender = '남자' and ipsail<'1985-01-01';
 
 select * from sinsang where age between 30 and 39;
 select * from sinsang where age >= 30 and age < 40;
